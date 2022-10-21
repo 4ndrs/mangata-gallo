@@ -35,7 +35,7 @@ p {
 
 .bg {
   width: 100%;
-  overflow: scroll;
+  overflow: hidden;
   padding-top: 4em;
   background-color: white;
 }
@@ -123,6 +123,10 @@ main {
   left: 16px;
 }
 
+.banner-container a {
+  color: inherit;
+}
+
 @media (max-width: 720px) {
   .banner-container div {
     color: black;
@@ -143,6 +147,28 @@ main {
 
 .banner + section > article {
   flex: 0 21em;
+}
+
+.banner + section > article:first-child {
+  order: 1;
+}
+
+.banner + section > article:last-child {
+  order: 2;
+}
+
+.banner + section h2 {
+  margin-left: 0;
+}
+
+.banner + section p {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.banner + section a {
+  margin-left: 0;
+  color: inherit;
 }
 
 @media (max-width: 430px) {
