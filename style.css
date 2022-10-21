@@ -21,8 +21,28 @@ p {
   margin: 1em;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1160px;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-container {
+    font-size: 1.3vw;
+  }
+}
+
+.bg {
+  background-color: white;
+  padding: 2em;
+}
+
 header {
-  padding-top: 2em;
   background-color: white;
 }
 
@@ -30,14 +50,12 @@ header > img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 4em;
-  width: 80vw;
+  margin-bottom: 2em;
+  width: 80%;
   max-width: 1500px;
 }
 
 nav {
-  padding-left: 2em;
-  padding-right: 2em;
   background-color: white;
 }
 
@@ -87,17 +105,12 @@ main {
   background-color: white;
 }
 
-section {
+.banner {
   display: flex;
-  flex-flow: wrap;
 }
 
-article {
+.banner article {
   flex: 1;
-}
-
-#jewelry1 {
-  width: 100%;
 }
 
 .banner-container {
@@ -108,9 +121,46 @@ article {
 .banner-container div {
   width: 20em;
   position: absolute;
-  font-size: 1.5vw;
   top: 8px;
   left: 16px;
+}
+
+.banner + section {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 28px;
+}
+
+.banner + section > article {
+  flex: 0 21em;
+}
+
+#jewelry1 {
+  width: 100%;
+}
+
+.cropped-img-article {
+  width: 21em;
+  height: 17em;
+  overflow: hidden;
+}
+
+#jewelry2 {
+  width: 26em;
+  margin-left: -2em;
+  margin-top: -2.5em;
+}
+
+#jewelry3 {
+  width: 26em;
+  margin-left: -2.3em;
+}
+
+#jewelry4 {
+  width: 26em;
+  margin-left: -2em;
+  margin-top: -10em;
 }
 
 footer {
@@ -120,6 +170,7 @@ footer {
   align-items: center;
   height: 10em;
   width: 100%;
+  font-size: 0.8em;
 }
 
 #copyright-logo {
