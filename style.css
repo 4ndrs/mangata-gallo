@@ -40,10 +40,6 @@ p {
   background-color: white;
 }
 
-header {
-  background-color: white;
-}
-
 header > img {
   display: block;
   margin-left: auto;
@@ -51,10 +47,6 @@ header > img {
   margin-bottom: 2em;
   width: 80%;
   max-width: 1500px;
-}
-
-nav {
-  background-color: white;
 }
 
 nav ul {
@@ -100,7 +92,6 @@ nav a:hover::after {
 
 main {
   padding: 2em 3em;
-  background-color: white;
 }
 
 .banner {
