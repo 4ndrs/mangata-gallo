@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  height: 500px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  grid-template-rows: 1fr 1fr 2fr 1fr;
+  justify-content: center;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: stretch;
+  background-color: #2b2d42;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  display: inline-block;
+  padding: 25px;
+  margin: 0 25px;
+  text-decoration: none;
+  color: #ffff;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div {
+  margin: 10px;
+}
