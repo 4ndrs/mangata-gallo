@@ -31,15 +31,13 @@ p {
   .container {
     grid-template-columns: 1fr;
   }
-
-  .banner-container {
-    font-size: 1.3vw;
-  }
 }
 
 .bg {
+  width: 100%;
+  overflow: scroll;
+  padding-top: 4em;
   background-color: white;
-  padding: 2em;
 }
 
 header {
@@ -125,15 +123,56 @@ main {
   left: 16px;
 }
 
+@media (max-width: 720px) {
+  .banner-container div {
+    color: black;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .banner + section {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
   gap: 28px;
+  margin-top: 28px;
 }
 
 .banner + section > article {
   flex: 0 21em;
+}
+
+@media (max-width: 430px) {
+  .banner-container div {
+    font-size: 4vw;
+  }
+
+  .banner + section {
+    width: 70vw;
+  }
+
+  .banner + section > article {
+    width: 80%;
+  }
+
+  .banner + section .cropped-img-article {
+    width: 80vw;
+  }
+
+  .banner + section .cropped-img-article #jewelry2 {
+    margin-left: -5em;
+  }
+
+  .banner + section .cropped-img-article #jewelry3 {
+    margin-left: -10em;
+  }
+
+  .banner + section .cropped-img-article #jewelry4 {
+    margin-left: -10em;
+  }
 }
 
 #jewelry1 {
