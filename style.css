@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fcea97;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 1em;
+}
+
+h2 {
+  font-size: 1em;
+  margin: 1em;
+}
+
+p {
+  margin: 1em;
+}
+
+header {
+  padding-top: 2em;
+  background-color: white;
+}
+
+header > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 4em;
+  width: 80vw;
+  max-width: 1500px;
+}
+
+nav {
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: white;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li:active {
+  background-color: #ebedeb;
+}
+
+nav a {
+  display: inline-block;
+  position: relative;
+  padding: 25px;
+  margin: 0 25px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #c4963f;
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+main {
+  padding: 2em 3em;
+  background-color: white;
+}
+
+section {
+  display: flex;
+  flex-flow: wrap;
+}
+
+article {
+  flex: 1;
+}
+
+#jewelry1 {
+  width: 100%;
+}
+
+.banner-container {
+  position: relative;
+  color: white;
+}
+
+.banner-container div {
+  width: 20em;
+  position: absolute;
+  font-size: 1.5vw;
+  top: 8px;
+  left: 16px;
+}
+
+footer {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 10em;
+  width: 100%;
+}
+
+#copyright-logo {
+  width: 7em;
+  margin: 1em;
+  flex: 0;
+}
+
+#copyright-text {
+  margin: 1em;
+  flex: 0 18em;
+}
